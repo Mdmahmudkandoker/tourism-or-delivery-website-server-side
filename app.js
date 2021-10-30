@@ -11,7 +11,7 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>console.log('Connected to the database'))
 .catch(err=> console.log(err))
-// const cors = require('cors');
+const cors = require('cors');
 
 //app config
 app.use(express.json())
